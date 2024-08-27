@@ -1,0 +1,141 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+
+  
+   background-color:  #f0f0f0;
+}
+.main{
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px  10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px #e7d0d0;
+    width: 98%;
+    height:80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    position: fixed;
+    
+}
+.main .logo{
+flex: 1;
+   margin-left:50px ;
+   font-size: 15px;
+   text-transform:uppercase;
+}
+.main ul{
+    display: flex;
+    flex: 2;
+    justify-content: space-evenly;
+   
+
+}
+#check{
+    display: none;
+}
+.main ul li{
+       list-style-type: none;
+}
+.main a{
+    text-decoration: none;
+    margin-right:10px;
+    color: black;
+    font-weight: 600;
+    padding:10px 9px;
+    
+}
+.social{
+    
+    margin-right: 20px;
+
+}
+.social a{
+    border: 1px solid;
+    border-radius: 100%;
+    padding: 10px;
+}
+.social a:hover{
+    background: #d8baba ;
+}
+.menu {
+    display: none;
+    font-size: 2.5em;
+}
+ .main ul li a:hover{
+    background-color: #d8baba;
+}
+@media screen and (max-width:800px){
+   .main{
+    width: 97%;
+    padding: 0px;
+    height: 60px;
+   
+    background-color: #007bff;
+    color: #fff;
+    
+   }
+    .main ul{
+        
+       position: absolute;
+       top: 50px;
+       
+       background: #007bff;
+       height: calc(70vh - 10px);
+       flex-direction: column;
+       text-align: center;
+       transition: right 0.5s linear;
+       width: 50%;
+       
+       
+     }    
+     .social{
+        margin-right: 40px;
+     }
+     .social a{
+        padding: 5px;
+        text-align: center;
+        color: #fff;
+        margin-right:20px ;
+        
+     }
+     .menu{
+        display:inline-block;
+        text-align: center;
+        width:100px;
+       
+     }
+    #check:checked ~ ul{
+        display: none;
+    }
+    }
+    @media screen and (max-width:550px) {
+        .main .logo{
+            font-size: 13px;
+            margin-left: 10px;
+        }
+        .main ul{
+            width: 100%;
+            
+        }
+        .social a{
+            align-items: center;
+            padding: 3px;
+           margin: 0;
+           padding: 5px;
+        }
+        
+            
+        }
+    
+
+   
+
+     
+      
